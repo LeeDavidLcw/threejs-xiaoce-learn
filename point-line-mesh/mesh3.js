@@ -7,6 +7,7 @@ const material = new THREE.MeshBasicMaterial(({
     wireframe: true,
 }));
 
+
 const mesh = new THREE.Mesh(geometry, material);
 
 export default mesh;
