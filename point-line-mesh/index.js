@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import {
-    OrbitControls
+  OrbitControls
 } from 'three/addons/controls/OrbitControls.js';
 // import mesh from './points.js';
 // import mesh from "./line.js"
@@ -39,3 +39,14 @@ render();
 document.body.append(renderer.domElement);
 
 const controls = new OrbitControls(camera, renderer.domElement);
+
+
+
+
+
+
+
+
+
+
+
