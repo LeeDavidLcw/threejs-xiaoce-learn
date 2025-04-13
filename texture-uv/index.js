@@ -2,7 +2,8 @@ import * as THREE from "three";
 import {
   OrbitControls
 } from 'three/addons/controls/OrbitControls.js';
-import mesh from "./mesh.js";
+// import mesh from "./mesh.js";
+import mesh from "./mesh2.js"
 
 const scene = new THREE.Scene();
 scene.add(mesh);
@@ -21,6 +22,7 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(width, height);
 
 function render(){
+  mesh.material.map.offset.x+= 0.005;
   renderer.render(scene, camera);
   requestAnimationFrame(render)
 }
