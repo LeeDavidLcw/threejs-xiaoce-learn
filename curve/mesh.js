@@ -6,13 +6,21 @@ const pointsList = arc.getPoints(20);
 const geometry = new THREE.BufferGeometry();
 geometry.setFromPoints(pointsList);
 
-const material = new THREE.PointsMaterial({
-    color: new THREE.Color('orange'),
-    size: 10
-});
+// const material = new THREE.PointsMaterial({
+//     color: new THREE.Color('orange'),
+//     size: 10
+// });
+// const points = new THREE.Points(geometry, material);
+// console.log(points);
 
-const points = new THREE.Points(geometry, material);
+// export default points;
 
-console.log(points);
 
-export default points;
+const material = new THREE.LineBasicMaterial({
+    color: new THREE.Color("orange")
+})
+const line = new THREE.Line(geometry, material)
+
+export default line;
+
+
